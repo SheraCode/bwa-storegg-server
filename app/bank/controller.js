@@ -43,7 +43,7 @@ module.exports = {
         try {
             const {name , nameBank , noRekening} = req.body
 
-            let bank = await Bank({name , nameBank , noRekening})
+            const bank = await Bank({name , nameBank , noRekening})
 
             await bank.save();
             req.flash('alertMessage',"Bank Berhasil di Tambahkan")
