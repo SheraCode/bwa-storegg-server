@@ -6,9 +6,9 @@
     "start": "node ./bin/www",
     "AressKuCantikk": "env-cmd -f ./.env nodemon ./bin/www",
     "SayangggKuuAress": "env-cmd -f ./.env.local nodemon ./bin/www"
-    
   },
   "dependencies": {
+    "@vercel/node": "^2.15.8",
     "admin-lte": "^3.2.0",
     "bcryptjs": "^2.4.3",
     "connect-flash": "^0.1.1",
